@@ -7,7 +7,7 @@ ELFFILE=build/trezor-emulator64-$TAG
 
 docker build -f Dockerfile.emulator -t $IMAGE .
 docker run -t -v $(pwd)/build:/build:z $IMAGE /bin/sh -c "\
-	git clone https://github.com/trezor/trezor-mcu && \
+	git clone https://github.com/Durendal/trezor-mcu && \
 	cd trezor-mcu && \
 	git checkout $TAG && \
 	git submodule update --init && \
