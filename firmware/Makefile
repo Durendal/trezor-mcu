@@ -6,7 +6,7 @@ ifeq ($(EMULATOR),1)
 OBJS += udp.o
 else
 OBJS += usb.o
-OBJS += bl_check.o
+#OBJS += bl_check.o
 endif
 
 OBJS += u2f.o
