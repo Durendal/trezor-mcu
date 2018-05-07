@@ -38,10 +38,10 @@ and verifying rubycoin appears in the list.
 Generating addresses:
 
     	$ trezorctl get_address -n "m/44'/16'/0'/0/0" -c Rubycoin
-        RTpLSunwr9aCmKKfECQbW4SHCJjV6NE5kx
+    	RTpLSunwr9aCmKKfECQbW4SHCJjV6NE5kx
 
 If for any reason you encounter an issue and are unable to boot into your trezor load it in bootloader mode and run:
 
-      $ trezorctl firmware_update
+    	$ trezorctl firmware_update
 
 This will pull the latest official pre-compiled binary from their website and install it on the trezor
