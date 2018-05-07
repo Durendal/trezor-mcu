@@ -51,7 +51,7 @@ void check_bootloader(void)
 
 	if (!known_bootloader(r, hash)) {
 		layoutDialog(&bmp_icon_error, NULL, NULL, NULL, "Unknown bootloader", "detected.", NULL, "Unplug your TREZOR", "contact our support.", NULL);
-		shutdown();
+		//shutdown();
 	}
 
 	if (r == 32 && 0 == memcmp(hash, bl_hash, 32)) {
