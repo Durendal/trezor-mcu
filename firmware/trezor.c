@@ -91,16 +91,16 @@ int main(void)
 	__stack_chk_guard = random32(); // this supports compiler provided unpredictable stack protection checks
 	oledInit();
 #else
-	check_bootloader();
+	//check_bootloader();
 	setupApp();
 	__stack_chk_guard = random32(); // this supports compiler provided unpredictable stack protection checks
 #endif
 
-	timer_init();
+	//timer_init();
 
 #ifdef APPVER
 	// enable MPU (Memory Protection Unit)
-	mpu_config();
+	//mpu_config();
 #endif
 
 #if DEBUG_LINK
